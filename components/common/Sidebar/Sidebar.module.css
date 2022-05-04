@@ -1,0 +1,108 @@
+.root {
+  position: relative;
+  z-index: 1;
+}
+
+.menu {
+  padding-left: 0;
+  margin-top: 36px;
+  list-style: none;
+}
+
+.menu__container {
+  width: 275px;
+  height: 100vh;
+  margin: -30px 0 0 -33px;
+  padding-top: 65px;
+
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+@media screen and (min-width: 768px) {
+  .root {
+    width: 275px;
+  }
+  .menu__container {
+    transform: none !important;
+    padding-top: 25px;
+    box-shadow: var(--shadow);
+  }
+  .menu__toggle-input,
+  .menu__toggle-input ~ label {
+    display: none;
+  }
+}
+.menu__item {
+  margin: 0;
+  padding: 18px 24px;
+  width: 100%;
+}
+.menu__item:last-of-type {
+  border-top: 1px solid var(--neutral-divider);
+}
+.menu__link {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.menu__icon {
+  margin-right: 10px;
+}
+.menu__toggle-button-container {
+  position: absolute;
+  width: 100%;
+  right: -2rem;
+  top: 1.35rem;
+  text-align: end;
+}
+.menu__toggle-input {
+  opacity: 0;
+  position: absolute;
+}
+.menu__toggle-input:checked ~ label .menu__toggle-button span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -4px);
+  background: #25282b;
+}
+.menu__toggle-input:checked ~ label .menu__toggle-button span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menu__toggle-input:checked ~ label .menu__toggle-button span:nth-child(3) {
+  transform: rotate(-45deg) translate(0, -4px);
+}
+.menu__toggle-input:checked ~ .menu__container {
+  transform: none;
+}
+.logo {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.menu__toggle-button > span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cacccf;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.menu__toggle-button > span:first-child {
+  transform-origin: 0% 0%;
+}
+.menu__toggle-button > span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+  width: 60%;
+}

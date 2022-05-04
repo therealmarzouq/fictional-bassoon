@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem 0;
+  width: 100%;
+}
+
+.stat {
+  list-style: none;
+  padding: 0;
+}
+
+.stat__item {
+  padding: 1.5rem 0;
+  flex: 1 0 250px;
+  box-sizing: border-box;
+  margin: 1rem 0.5em;
+}
+
+.stat__content {
+  display: flex;
+  align-items: center;
+}
+
+.stat__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat__text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.stat__count {
+  color: var(--blue-1);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.stat__icon {
+  /* margin-right: 10px; */
+  width: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  /* .root {
+
+  } */
+}

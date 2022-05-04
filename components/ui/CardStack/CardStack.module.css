@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.root > div {
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  background-color: var(--white);
+}

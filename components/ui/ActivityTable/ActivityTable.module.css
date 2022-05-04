@@ -1,0 +1,53 @@
+.root {
+  width: 100%;
+}
+.table__title {
+  font-size: 20px;
+  color: #25282b;
+  padding: 18px 24px;
+  font-weight: bold;
+}
+.table__wrapper {
+  overflow-x: auto;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+.table__head {
+  background-color: #fafafa;
+}
+.table__head th {
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #25282b;
+  font-weight: bold;
+  text-align: left;
+}
+.table__body .table__cell {
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #52575c;
+  border-top: 1px solid var(--neutral-divider);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table__cell-with-image {
+  display: flex;
+  align-items: center;
+}
+.table__cell-content {
+  padding-left: 8px;
+  white-space: nowrap;
+}
+
+.table__actions {
+  display: flex;
+  align-items: center;
+}
+.table__action--item {
+  margin-left: 8px;
+  margin-right: 8px;
+}

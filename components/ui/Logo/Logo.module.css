@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+.clafiya-text {
+  margin-left: 6px;
+  margin-right: 6px;
+  color: var(--blue-2);
+  font-family: "Avenir";
+}
